@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Panier E-commerce</title>
+</head>
+<body>
+    <div class="box-primary">
+        <tr>
+            <td><h2>Panier</h2></td>
+        </tr>
+        <table class="box-main">
+            <thead>
+                <tr>
+                    <td class="Text1 enbas">Nom de l'article</td>
+                    <td class="Text2 enbas">Quantité</td>
+                    <td class="Text3 enbas">Prix unitaire</td>
+                    <td class="Text4 enbas">Sous total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="mes-elements">
+                    <td><img class="sac-de-riz" src="/img/Riz.jfif" alt=""></td>
+                    <th class="details-de-l-article">Sac de Riz</th>
+                    <th class="details-de-l-article" style="color: red;">Supprimer</th>
+                </tr>
+                <tr class="quantité">
+                   <th>
+                    <input class="boutton-moins" type="button" value="-">
+                    <input class="valeurQuantite" type="text" value="1">
+                    <input class="boutton-plus" type="button" value="+">
+                   </th>
+                </tr>  
+                <tr class="box-price">
+                    <th class="price">15000 fr</th>
+                    <th class="subtotal" style="color: blue;">15000 fr</th>
+                </tr>  
+            </tbody>
+            <tbody>
+                <tr class="mes-elements ">
+                    <td><img class="sac-de-riz" src="/img/bic.jfif">
+                    <th class="details-de-l-article">Stylo</th>
+                    <th class="details-de-l-article" style="color: red;">Supprimer</th>
+                </tr>
+                <tr class="quantité">
+                   <th>
+                    <input class="boutton-moins btn-moins" type="button" value="-">
+                    <input class="valeur-quantite" type="text" value="1">
+                    <input class="boutton-plus btn-plus" type="button" value="+">
+                   </th>
+                </tr>  
+                <tr class="box-price">
+                    <th class="price2 ">15000 fr</th>
+                    <th class="sub-total" style="color: blue;">15000 fr</th>
+                </tr>  
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="input">
+                        <input type="text" name="" id="" value="Nom de l'article">
+                        <input class="input-1" type="text" name="" id="" value="1000">
+                    </td>
+                    <th >
+                        <input class="add-article" type="button" value="Ajouter un article">
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+        <tr>
+            <td><h3 class="total">Total : <span>0</span></h3></td>
+        </tr>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
